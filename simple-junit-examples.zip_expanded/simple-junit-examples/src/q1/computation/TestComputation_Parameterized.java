@@ -29,8 +29,7 @@ public class TestComputation_Parameterized {
 
    @Test
    public void testGetDiscount() throws Exception {
-      Assert.assertEquals(mExpected, 
-    		  Integer.parseInt(UtilProp.getProp(Integer.toString(mInput1))) 
-    		  + Integer.parseInt(UtilProp.getProp(Integer.toString(mInput2))));
+      int result = com.getDiscount(mInput1, mInput2);
+	   Assert.assertEquals(mExpected, result);
    }
 }
